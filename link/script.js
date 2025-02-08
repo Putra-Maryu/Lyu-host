@@ -1,3 +1,11 @@
+document.addEventListener("contextmenu", (event) => event.preventDefault());
+document.addEventListener("keydown", (event) => {
+    if (event.ctrlKey && (event.key === "u" || event.key === "U" || event.key === "s" || event.key === "S" || event.key === "i" || event.key === "I" || event.key === "j" || event.key === "J" || event.key === "c" || event.key === "C")) {
+        event.preventDefault();
+    }
+});
+
+
 function orderProduct(productName) {
             const phoneNumber = "+6282123178815"; 
             const message = `Halo, saya ingin memesan ${productName}.`;
